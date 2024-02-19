@@ -4,6 +4,106 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="w-[90%] mx-auto">
+      <nav>
+        <div class="navbar bg-base-100 font-rale mt-6">
+          <div class="navbar-start">
+            <a class="btn btn-ghost text-3xl font-extrabold"
+              >Horizon <span class="text-[#1DD100]">Hitch</span></a
+            >
+          </div>
+          <div class="space-x-6 text-lg">
+            <p>Home</p>
+            <p>About</p>
+            <p>Destination</p>
+            <p>Search</p>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-[#1cd1002f] text-[#1DD100] text-lg font-semibold border border-solid border-[#1DD100]"
+              >Bus <img src="./images/bus-icon.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+      <section>
+        <div
+          class="min-h-[80vh] bg-[url(./images/banner.png)] bg-no-repeat bg-cover bg-center rounded-3xl text-center text-white flex flex-col items-center justify-center"
+        >
+          <div class="space-y-8">
+            <h1 class="text-7xl font-bold">
+              End-to-End Travel with <br />
+              <span class="text-[#1DD100]">Horizon Hitch</span>
+            </h1>
+            <p class="text-xl">
+              Yes, you can run unit tests and view the results directly within
+              the <br />app. The integrated testing features allow for a
+              streamlined .
+            </p>
+            <button
+              class="btn text-black bg-[#1DD100] border-none text-xl font-semibold px-5 py-2"
+            >
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!--  best offer section-->
+      <section class="w-[90%] mx-auto mt-20">
+        <h1 class="text-center text-5xl font-rale font-bold mb-10">
+          Best offers for you
+        </h1>
+        <div class="flex justify-evenly gap-16">
+          <div
+            class="bg-[#FFBF0F] h-[220px] w-full flex justify-around items-center rounded-xl"
+          >
+            <div class="space-y-2">
+              <h1 class="text-5xl font-extrabold">15% Off</h1>
+              <p class="text-xl font-bold">On your next purchase</p>
+              <p class="text-lg text-[#0307129f]">Use by February 2024</p>
+            </div>
+            <img src="./images/cupon-devider.png" alt="" />
+            <div class="space-y-2">
+              <h1 class="text-4xl font-bold font-rale">NEW15</h1>
+              <p class="text-xl text-[#0307129f]">Coupon Code</p>
+            </div>
+          </div>
+          <div
+            class="bg-[#F78C9C] h-[220px] w-full flex justify-around items-center rounded-xl"
+          >
+            <div class="space-y-2">
+              <h1 class="text-5xl font-extrabold">15% Off</h1>
+              <p class="text-xl font-bold">On your next purchase</p>
+              <p class="text-lg text-[#0307129f]">Use by February 2024</p>
+            </div>
+            <img src="./images/cupon-devider.png" alt="" />
+            <div class="space-y-2">
+              <h1 class="text-4xl font-bold font-rale">NEW15</h1>
+              <p class="text-xl text-[#0307129f]">Coupon Code</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="btn text-[#1DD100] border border-[#1DD100] bg-white font-rale font-semibold text-xl mt-10"
+          >
+            See All Offers
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
 </html>
