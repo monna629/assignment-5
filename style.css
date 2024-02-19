@@ -9,3 +9,7 @@
 hr {
   color: #03071244;
 }
+li {
+  display: flex;
+  justify-content: space-between;
+}
