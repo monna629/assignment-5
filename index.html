@@ -51,7 +51,7 @@
               streamlined .
             </p>
             <button
-              class="btn text-black bg-[#1DD100] border-none text-xl font-semibold px-5 py-2"
+              class="btn text-white bg-[#1DD100] border-none text-xl font-semibold px-5 py-2"
             >
               Buy Tickets
             </button>
@@ -90,7 +90,7 @@
             </div>
             <img src="./images/cupon-devider.png" alt="" />
             <div class="space-y-2">
-              <h1 class="text-4xl font-bold font-rale">Couple20</h1>
+              <h1 class="text-4xl font-bold font-rale">Couple 20</h1>
               <p class="text-xl text-[#0307129f]">Coupon Code</p>
             </div>
           </div>
@@ -131,7 +131,10 @@
                   </div>
                 </div>
                 <button class="btn flex text-[#1DD100] bg-[#1cd10025] text-lg">
-                  <img src="./images/seat-green.png" alt="" /><span>40</span>
+                  <img src="./images/seat-green.png" alt="" /><span
+                    id="remaining-seat"
+                    >8</span
+                  >
                   Seats Left
                 </button>
               </div>
@@ -174,9 +177,13 @@
         </div>
 
         <!-- ticket -->
-        <div class="p-5 w-[90%] mx-auto bg-white rounded-xl mb-32 flex">
+        <div
+          class="px-5 pt-7 w-[90%] mx-auto bg-white rounded-xl mb-32 flex space-y-4"
+        >
           <!-- choose -->
-          <div class="w-[60%] border-r-2 border-dashed border-[#03071225] pr-8">
+          <div
+            class="w-[60%] border-r-2 border-dashed border-[#03071225] pr-8 space-y-4"
+          >
             <h1 class="text-2xl font-semibold">Select Your Seat</h1>
             <hr />
             <div class="flex justify-between">
@@ -194,7 +201,7 @@
             </div>
             <!-- seats -->
             <div class="pb-30 pr-4">
-              <!-- grid -->
+              <!-- -->
               <div class="space-y-4">
                 <div class="flex justify-between">
                   <div class="flex gap-6">
@@ -220,21 +227,25 @@
             </div>
           </div>
           <!-- math -->
-          <div class="w-[30%] p-4">
-            <h1>Select Your Seat</h1>
+          <div class="w-[30%] px-4 space-y-4">
+            <h1 class="text-2xl font-semibold">Select Your Seat</h1>
             <hr />
-            <div class="bg-[#03071211] p-4 rounded-xl">
+            <div class="bg-[#03071211] p-4 rounded-xl space-y-4">
               <ul class="flex justify-between font-semibold">
                 <li>
                   Seat
-                  <span class="bg-[#1DD100] text-white rounded-xl px-2">0</span>
+                  <span
+                    id="total-select"
+                    class="bg-[#1DD100] text-white rounded-xl px-2"
+                    >0</span
+                  >
                 </li>
                 <li>Class</li>
                 <li>Price</li>
               </ul>
               <hr />
               <!-- will append here -->
-              <div></div>
+              <div id="append-here"></div>
               <hr />
               <ul class="font-semibold flex justify-between">
                 <li>Total Price</li>
@@ -247,6 +258,34 @@
                   class="input w-full max-w-xs"
                 />
                 <button class="btn bg-[#1DD100] text-white">Apply</button>
+              </div>
+            </div>
+            <!-- inputs -->
+            <div class="space-y-4">
+              <p>Passenger Name*</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input type="text" class="grow" placeholder="Enter Your Name" />
+              </label>
+              <p>Passenger Number*</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Enter Your Phone number"
+                />
+              </label>
+              <p>Email ID*</p>
+              <label class="input input-bordered flex items-center gap-2">
+                <input
+                  type="text"
+                  class="grow"
+                  placeholder="Enter Your Email"
+                />
+              </label>
+              <button class="btn bg-[#1DD100] w-full text-white">Next</button>
+              <div class="underline flex justify-around text-[#03071275]">
+                <a href="">Terms and Conditions</a>
+                <a href="">Cancellation Policy</a>
               </div>
             </div>
           </div>
